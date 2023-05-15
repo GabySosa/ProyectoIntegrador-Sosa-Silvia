@@ -1,6 +1,13 @@
 <div class = "row">
+    <h1>Educacion</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-primary" routerLink="/editacercade/id/5" *ngIf="isLogged">
+            Editar persona
+        </button>
+    </div>
+
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src= "../../../assets/fotoperfil.jpg" class = "img-fluid" id="fotoperfil">
+        <img src= {{persona.img}} class = "img-fluid" id="fotodeperfil">
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
